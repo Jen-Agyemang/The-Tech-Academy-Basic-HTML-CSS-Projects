@@ -1,0 +1,152 @@
+/* styling the entire page */
+
+body {
+    background-color: grey;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1em;
+    font-weight: bolder;
+}
+
+/*  targeting the anchor text decoration */
+
+a, a:active, a:link, a:visited {
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+.container {
+    width: 100%;
+    height: 320px;
+}
+
+.login {
+    border: 3px solid red;
+    box-shadow: inset 0 0 4px red;
+    border-radius: 9px;
+    margin: 10% auto;
+}
+
+.form_header {
+    width: 100%;
+    height: 10%;
+    background-color: blue;
+    border-bottom:  2px solid red;
+    text-align: center;
+    padding: 3% 0 0 0;
+    border-radius: 9px 9px 0 0;
+}
+
+form {
+    background-color: blanchedalmond;
+    padding: 5% 5%;
+    border-radius: 0 0 9px 9px;
+}
+
+input[type="text"],
+input[type="password"] {
+    outline: none;
+    font-family: caption;
+    border: 3px double red;
+    padding: 4px;
+    margin: 5% 0 0 0;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 0 0 4px green;
+    box-shadow: inset 0 0 11px #000;
+}
+
+.btn {
+    outline: none;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    background-color: blanchedalmond;
+    border: 2px solid blue;
+}
+
+.btn:hover {
+    color: black;
+    background-color: blanchedalmond;
+    box-shadow: inset 0 0 5px #fff;
+}
+
+.rem {
+    font-size: 15px;
+}
+
+.forgot {
+    width: 100%;
+    font-size: 4em;
+}
+
+
+/* screen size 500px wide or larger, following styles will be applied. */
+
+@media (min-width: 500px) {
+    .login {
+        width: 500px;
+        height: 355px;
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 425px;
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 20px;
+        width: 125px;
+        height: 50px;
+        margin: 45px 0 0 110px;
+    }
+    .forgot a {
+        margin: 0 0 0 35%;
+    }
+    .chk {
+        margin: 5% 0 0 0;
+    }
+    .rem {
+        margin: 5% 0 0 90px;
+    }
+}
+
+
+/* screen size less than 500px wide,following styles will be applied. */
+@media (max-width:499px) {
+    .login {
+        width: 300px;
+        height: 297px;
+        background-color: #eff0f2;
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 250px;
+        font-size: 15px;
+    }
+    .btn {
+        font-size: 14px;
+        width: 225px;
+        height: 40px;
+        margin: 15% 0 0 7%;
+    }
+    .forgot a {
+        margin: 0 0 0 25%
+    }
+    .chk {
+        margin: 6% 0 0 %;
+    }
+    .rem {
+        margin: 6% 0 0 5%;
+    }
+}
+
+
+
