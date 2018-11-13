@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            color: #000; font-weight: bold;
+        }
+        button {
+            color: #000; font-weight: bold; height:35px; width: 100px;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h2 id="greet">Please login:</h2>
+    First Name: <input type="text" id="txt1" size="25"><br><br>
+    last Name: <input type="text" id="txt2" size="25"><br><br>
+    <button onclick="greet()">Login</button>
+
+    <script>
+        functino greet() {
+            let fname = document.getElementById("txt1").value;
+            let lname = document.getElementById("txt2").value;
+            let greet = document.getElementById("greet").innerHTML = "Signed in as:<br>"+fname+" "+lname;
+            txt1.value = ""; txt2.value = ""; //this clear the txt fields
+        };
+    </script>
+
+    
+</body>
+</html>
